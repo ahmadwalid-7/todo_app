@@ -44,4 +44,4 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 # Supabase config
-lib/config/supabase_config.dart
+lib/config/supa_config.dart
