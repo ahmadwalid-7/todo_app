@@ -1,42 +1,118 @@
+# Flutter Todo App
 
-# train_app_2
+My first Flutter project to learn Flutter basics and Supabase integration.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-My first Flutter project with Supabase backend.
-
-## Features
+## 📱 Features
 
 - ✅ User authentication (Login/SignUp)
-- ✅ Create, Read, Update, Delete tasks
-- ✅ Mark tasks as complete
-- ✅ Dark theme
+- ✅ Create new tasks
+- ✅ View all tasks
+- ✅ Update existing tasks
+- ✅ Delete tasks
+- ✅ Mark tasks as complete/incomplete
+- ✅ Pull to refresh
+- ✅ Dark theme support
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- Flutter 3.x
-- Supabase (Backend + Auth)
-- Material 3
+- **Flutter** 3.x - UI Framework
+- **Supabase** - Backend as a Service
+  - Authentication
+  - PostgreSQL Database
+  - Real-time subscriptions
+- **Material Design 3** - UI/UX Design
 
-## What I Learned
+## 📚 What I Learned
 
-- Flutter basics (StatefulWidget, ListView)
-- Supabase CRUD operations
-- Authentication flow
+- Flutter widgets and layouts
+- StatefulWidget vs StatelessWidget
 - State management basics
+- Supabase CRUD operations
+- User authentication flow
+- HTTP requests and async/await
+- Git & GitHub workflow
+- `.gitignore` and protecting sensitive data
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter SDK (3.0 or higher)
+- Dart SDK
+- Android Studio / VS Code
+- Supabase account
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/ahmadwalid-7/flutter_todo_app.git
+```
+
+2. Navigate to project directory:
+```bash
+cd flutter_todo_app
+```
+
+3. Install dependencies:
+```bash
+flutter pub get
+```
+
+4. Create your own Supabase project and configure:
+   - Create `lib/config/supa_config.dart`
+   - Add your Supabase URL and anon key
+
+5. Run the app:
+```bash
+flutter run
+```
+
+## 📁 Project Structure
+```
+lib/
+├── main.dart           # App entry point
+├── screens/            # UI screens
+│   ├── login.dart
+│   ├── signup.dart
+│   ├── home.dart
+│   └── addtask.dart
+├── services/           # Business logic
+│   ├── auth.dart       # Authentication service
+│   └── datatask.dart   # CRUD operations
+└── config/             # Configuration
+    └── supa_config.dart # Supabase keys (not in Git)
+```
+
+## 🎓 Learning Journey
+
+This project is part of my Flutter learning journey following Wael Abu Hamza's course on YouTube. It helped me understand:
+
+1. Flutter fundamentals
+2. Backend integration with Supabase
+3. User authentication
+4. CRUD operations
+5. Version control with Git/GitHub
+
+## 🔜 Next Steps
+
+- Learn Provider for state management
+- Explore APIs and HTTP requests
+- Study Bloc pattern
+- Build more complex projects
+
+## 📝 Notes
+
+- This is a learning project and may contain beginner-level code
+- Sensitive configuration files are excluded via `.gitignore`
+- Feel free to use this as a reference for your own learning!
+
+## 📧 Contact
+
+Ahmad Walid - [@ahmadwalid-7](https://github.com/ahmadwalid-7)
+
+---
+
+**Made with ❤️ while learning Flutter**
 ---
 **Note:** This is a learning project
